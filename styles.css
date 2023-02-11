@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
     display: flex;
     flex-direction: column;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
 }
 
 a {
@@ -23,12 +25,107 @@ a {
     background-color: #1F2937;
     display: flex;
     justify-content: space-between;
-    padding: 0 5em;
-
+    padding: 0 8em;
 }
 
 .header-links {
     display: flex;
     gap: 1em;
     align-items: center;
+}
+
+.title {
+    background-color: #1F2937;
+    display: flex;
+    justify-content: space-between;
+    padding: 6em 8em;
+    gap: 1em
+}
+
+.title-left,
+.img {
+    flex: 1
+}
+
+.img {
+    background-color: grey;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    flex-shrink: 0;
+}
+
+h1 {
+    color: #F9FAF8;
+    margin: 0;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+p {
+    color: #E5E7EB;
+    margin: 0;
+    font-size: 18px;
+}
+
+button {
+    background-color: #3882f6;
+    padding: 4px 16px;
+    margin-top: 1em;
+    color: #F9FAF8;
+    font-weight: 500;
+}
+
+.random {
+    text-align: center;
+    padding-bottom: 5em;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.blue {
+    width: 144px;
+    height: 144px;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: #3882f6;
+}
+
+.box > a {
+    width: 150px;
+}
+
+h2 {
+    margin: 1em;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+}
+
+.text {
+    color: #1F2937;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    padding: 5em 8em;
+}
+
+.quote > a {
+    font-size: 34px;
+    font-style: italic;
+    font-weight: 100;
+    color: grey;
+}
+
+.quote > p {
+    font-size: 24px;
+    font-style: bold;
+    color: #1F2937;
+    font-weight: 900;
+    text-align: right;
 }
