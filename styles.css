@@ -4,47 +4,57 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Roboto, sans-serif;
+    box-sizing: border-box;
 }
 
 a {
     text-decoration: none;
 }
 
-.link {
+.header-links > a {
     font-size: 18px;
     color: #E5E7EB;
-
 }
+
 .logo {
     font-size: 24px;
     color: #F9FAF8;
     padding: 1em 0em;
-
+    justify-content: flex-start;
 }
+
 .header {
     background-color: #1F2937;
     display: flex;
-    justify-content: space-between;
-    padding: 0 8em;
+    justify-content: center;
+    padding: 0em;
 }
 
 .header-links {
     display: flex;
     gap: 1em;
+    justify-content: flex-end;
     align-items: center;
+    padding: 1em 0em;
+}
+
+.logo,
+.header-links {
+    width: 420px;
+    margin: 0 50px;
 }
 
 .title {
     background-color: #1F2937;
     display: flex;
-    justify-content: space-between;
-    padding: 6em 8em;
-    gap: 1em
+    justify-content: center;
+    padding: 6em 0em;
 }
 
 .title-left,
 .img {
-    flex: 1
+    width: 420px;
+    margin: 0 50px;
 }
 
 .img {
@@ -75,13 +85,14 @@ button {
     margin-top: 1em;
     color: #F9FAF8;
     font-weight: 500;
+    border-radius: 10px;
 }
 
-.random {
+.box {
     text-align: center;
     padding-bottom: 5em;
 }
-.box {
+.random {
     display: flex;
     justify-content: center;
     gap: 2em;
@@ -90,12 +101,12 @@ button {
 .blue {
     width: 144px;
     height: 144px;
-    border-radius: 3px;
+    border-radius: 10px;
     border-style: solid;
     border-color: #3882f6;
 }
 
-.box > a {
+.random > a {
     width: 150px;
 }
 
@@ -128,4 +139,43 @@ h2 {
     color: #1F2937;
     font-weight: 900;
     text-align: right;
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box2 > div {
+    background-color: #3882f6;
+    margin: 6em;
+    padding: 2em 6em;
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+    gap: 1em;
+    border-radius: 10px;
+}
+
+.footer {
+    background-color: #1F2937;
+    color: #E5E7EB;
+    text-align: center;
+    padding: 2em 0em;
+}
+
+h3 {
+    color: #F9FAF8;
+    margin: 0;
+}
+
+.button {
+    color:#F9FAF8;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 4px 16px;
+
 }
